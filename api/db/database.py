@@ -1,11 +1,10 @@
 from sqlmodel import SQLModel, create_engine, Session
-from models import auth, blog, projects
+from core.config import settings
 
+DB_URI = settings.get_db_uri()
 
-eng = 'db.db'
+engine = create_engine(DB_URI)
 
-sqlite_url = f'sqlite:///{eng}'
-engine = create_engine(sqlite_url, echo=True)
 
 def get_db():
     db = Session(engine)

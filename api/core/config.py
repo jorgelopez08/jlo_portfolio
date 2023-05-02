@@ -4,7 +4,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str
+    PROJECT_NAME: str = "JLO Portfolio API"
     SECRET_KEY: str = secrets.token_urlsafe(32)
 
     DATABASE_USERNAME: str = os.getenv('DB_USERNAME', None)
@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     DATABASE_DRIVER: str = os.getenv('DB_DRIVER', None)
 
     # Todo: set token expiration time
-    ACCESS_TOKEN_EXPIRE_MINUTES: int
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
 
     def get_db_uri(self):
         url = ""
@@ -34,5 +34,6 @@ class Settings(BaseSettings):
 
         url += self.DATABASE_NAME
         return url
+
 
 settings = Settings()

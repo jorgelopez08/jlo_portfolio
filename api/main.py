@@ -20,15 +20,10 @@ app.add_middleware(
 app.include_router(
     auth.router,
     prefix='/auth',
-    tags=['Authentication']
+    tags=['Users authentication']
 )
 
 
-@app.get("/")
+@app.get("/", tags=["Home"])
 async def root():
     return {"message": "Welcome to my Portfolio API"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
