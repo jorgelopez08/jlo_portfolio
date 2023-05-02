@@ -1,0 +1,11 @@
+.contact {
+    color: var(--black);
+    width:70%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.contact-header {
+    text-align: left;
+    margin-bottom: 10vh;
+}
