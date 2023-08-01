@@ -5,27 +5,27 @@ export default function Work() {
   return (
     <section id="jobs" className="flex items-center justify-center">
       <div className="w-8/12">
-        <div className="text-left sm:py-24 lg:max-w-none lg:py-16">
+        <div className="text-left sm:py-24 lg:max-w-none lg:py-12">
           <h1 className="font-bold">Experience</h1>
         </div>
         <div className="">
           <div className="flex">
             <div className="w-10/12">
               <div className="text-left text-2xl ">
-                <p className="pt-4 pb-9">
+                <p className="pt-3 pb-7">
                   • Write high performance and maintainable code for different
                   clients.
                 </p>
-                <p className="pt-4 pb-9">
+                <p className="pt-3 pb-7">
                   • Work with multi-disciplinary teams of engineering, business
                   and clients.
                 </p>
-                <p className="pt-4 pb-9">
+                <p className="pt-3 pb-7">
                   • Architected and implemented Stellar Receiving Anchor API,
                   which allows to receive cryptocurrencies and disperse payments
-                  in fiat.
+                  in fiat currency.
                 </p>
-                <p className="pt-4 pb-9">
+                <p className="pt-3 pb-7">
                   • Design and implement web services using powerful frameworks.
                 </p>
               </div>
