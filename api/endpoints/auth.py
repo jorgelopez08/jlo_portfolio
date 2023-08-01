@@ -3,7 +3,7 @@ from fastapi.exceptions import HTTPException
 from sqlalchemy.exc import IntegrityError
 from core.config import settings
 from core.security import *
-from cruds.auth_crud import *
+from cruds.auth import *
 from models.auth import User
 
 router = APIRouter()

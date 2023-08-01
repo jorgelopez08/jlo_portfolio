@@ -3,20 +3,36 @@ import "./Work.css";
 
 export default function Work() {
   return (
-    <section id="jobs" className="jobs">
-      <div className="jobs-header">
-        <h1>2.Experience</h1>
-      </div>
-      <div className="jobs-content">
-        <div className="jobs-stack">
-          <div className="jobs-stack-left">
-            <p>• Write high performance and maintainable code for different clients.</p>
-            <p>• Work with multi-disciplinary teams of engineering, business and clients.</p>
-            <p>• Architected and implemented Stellar Receiving Anchor API, which allows to receive cryptocurrencies and disperse payments in fiat.</p>
-            <p>• Design and implement web services using powerful frameworks.</p>
-          </div>
-          <div className="jobs-stack-right">
-            <h1>W O R K</h1>
+    <section id="jobs" className="flex items-center justify-center">
+      <div className="w-8/12">
+        <div className="text-left sm:py-24 lg:max-w-none lg:py-12">
+          <h1 className="font-bold">Experience</h1>
+        </div>
+        <div className="">
+          <div className="flex">
+            <div className="w-10/12">
+              <div className="text-left text-2xl ">
+                <p className="pt-3 pb-7">
+                  • Write high performance and maintainable code for different
+                  clients.
+                </p>
+                <p className="pt-3 pb-7">
+                  • Work with multi-disciplinary teams of engineering, business
+                  and clients.
+                </p>
+                <p className="pt-3 pb-7">
+                  • Architected and implemented Stellar Receiving Anchor API,
+                  which allows to receive cryptocurrencies and disperse payments
+                  in fiat currency.
+                </p>
+                <p className="pt-3 pb-7">
+                  • Design and implement web services using powerful frameworks.
+                </p>
+              </div>
+            </div>
+            <div className="jobs-stack-right flex w-2/12 text-center text-ellipsis">
+              <h1>W O R K</h1>
+            </div>
           </div>
         </div>
       </div>

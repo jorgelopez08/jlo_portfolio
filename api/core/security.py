@@ -8,7 +8,7 @@ from jwt import PyJWTError
 from passlib.context import CryptContext
 from pydantic import BaseModel
 
-from cruds.auth_crud import find_user
+from cruds.auth import find_user
 from core.config import settings
 from models.auth import User
 # to get a string like this run:
