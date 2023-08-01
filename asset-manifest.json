@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jlo_portfolio/static/css/main.cad83e42.css",
+    "main.js": "/jlo_portfolio/static/js/main.1e4a6f42.js",
+    "static/media/JL.gif": "/jlo_portfolio/static/media/JL.9041ec4a082a3a17e4ae.gif",
+    "static/media/me.png": "/jlo_portfolio/static/media/me.45f4ed8926e9b14d2652.png",
+    "index.html": "/jlo_portfolio/index.html",
+    "main.cad83e42.css.map": "/jlo_portfolio/static/css/main.cad83e42.css.map",
+    "main.1e4a6f42.js.map": "/jlo_portfolio/static/js/main.1e4a6f42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cad83e42.css",
+    "static/js/main.1e4a6f42.js"
+  ]
+}
