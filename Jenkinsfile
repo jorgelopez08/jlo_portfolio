@@ -15,7 +15,7 @@ pipeline {
 
     stage('clone') {
       steps {
-        git(url: 'https://github.com/jorgelopez08/jlo_portfolio', branch: 'master')
+        git(url: 'git@github.com:jorgelopez08/jlo_portfolio.git', branch: 'master')
       }
     }
 
