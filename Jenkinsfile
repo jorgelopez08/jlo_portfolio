@@ -1,15 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('ssh connection') {
-      steps {
-        sshagent()
-      }
-    }
-
     stage('Portfolio') {
       steps {
-        sh 'cd jlo_portfolio/'
+        sh 'cd /Developer/jlo_portfolio/'
       }
     }
 
