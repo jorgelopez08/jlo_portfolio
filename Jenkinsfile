@@ -13,9 +13,15 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('clone') {
       steps {
         git(url: 'https://github.com/jorgelopez08/jlo_portfolio', branch: 'master')
+      }
+    }
+
+    stage('docker') {
+      steps {
+        sh 'docker compose up --build -d'
       }
     }
 
