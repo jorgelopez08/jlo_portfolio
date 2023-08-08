@@ -1,7 +1,7 @@
 {
   "name": "jlo_portfolio",
   "version": "0.1.0",
-  "homepage": "https://jorgelopez08.github.io/jlo_portfolio",
+  "proxy": "http://localhost:3000",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.15",
