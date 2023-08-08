@@ -1,10 +1,11 @@
-FROM node:alpine3.18
+FROM node:18
 
 WORKDIR /
-ENV PATH /app/node_modules/.bin/$PATH
 
-COPY package.json ./
+
+COPY package.json .
 RUN npm install
 COPY . ./
 RUN npm run build
 RUN npm install -g serve
+CMD [ "serve",  "-s", "build" ]

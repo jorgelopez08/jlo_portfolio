@@ -3,7 +3,5 @@ version: "3.3"
 services:
   web:
     build: .
-    command: > 
-      serve -s build
     ports:
       - "3000:3000"
