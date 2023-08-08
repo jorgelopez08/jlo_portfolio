@@ -4,8 +4,8 @@ WORKDIR /
 
 
 COPY package.json .
-RUN npm install
+RUN sudo npm install
 COPY . ./
-RUN npm run build
-RUN npm install -g serve
+RUN sudo npm run build
+RUN sudo npm install -g serve
 CMD [ "serve",  "-s", "build" ]
