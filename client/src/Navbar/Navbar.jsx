@@ -44,15 +44,14 @@ export default function Navbar() {
                       className="h-8 w-auto rounded-md"
                       src={logo}
                       alt="JLO Software logo"
-                      
                     />
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link
-                        key={item.name}
+                      <a
+                        href={item.href}
                         to={item.href}
                         className={classNames(
                           item.href === location
@@ -65,7 +64,7 @@ export default function Navbar() {
                         }
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
