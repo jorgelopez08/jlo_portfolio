@@ -49,23 +49,33 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        href={item.href}
-                        to={item.href}
-                        className={classNames(
-                          item.href === location
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={
-                          item.href === location ? "page" : undefined
-                        }
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                    {/* const navigation = [
+                      { name: "Home", href: "/", current: true },
+                      { name: "Experience", href: "/xp", current: false },
+                      { name: "Projects", href: "/projects", current: false },
+                      { name: "Contact", href: "/contact", current: false },
+                    ]; */}
+                    <ul>
+                      {navigation.map((item) => (
+                        <li id={item.name}>
+                          <Link
+                            to={item.href}
+                            id={item.name}
+                            className={classNames(
+                              item.href === location
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium"
+                            )}
+                            aria-current={
+                              item.href === location ? "page" : undefined
+                            }
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
