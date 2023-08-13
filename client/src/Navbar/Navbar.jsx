@@ -49,15 +49,8 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {/* const navigation = [
-                      { name: "Home", href: "/", current: true },
-                      { name: "Experience", href: "/xp", current: false },
-                      { name: "Projects", href: "/projects", current: false },
-                      { name: "Contact", href: "/contact", current: false },
-                    ]; */}
-                    <ul>
                       {navigation.map((item) => (
-                        <li id={item.name}>
+                        
                           <NavLink
                             to={item.href}
                             id={item.name}
@@ -73,9 +66,7 @@ export default function Navbar() {
                           >
                             {item.name}
                           </NavLink>
-                        </li>
                       ))}
-                    </ul>
                   </div>
                 </div>
               </div>
