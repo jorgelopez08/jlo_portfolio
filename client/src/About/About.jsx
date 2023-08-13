@@ -22,7 +22,7 @@ export default function About() {
               crypto network.
             </p>
             <p>These is the tech stack I've been working with:</p>
-            <div className="flex my-5 md:text-base font-semibold justify-center">
+            <div className="flex my-5 md:text-base font-semibold justify-center/*  */">
               <div className="mr-5 ml-5 md:mr-20 md:ml-20">
                 <p>• Java</p>
                 <p>• Python</p>

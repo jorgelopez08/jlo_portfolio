@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="w-8/12">
         <div className="bg-gray-100">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="mx-auto max-w-2xl sm:py-24 lg:max-w-none lg:py-16">
+            <div className="mt-5 md:mx-auto max-w-2xl sm:py-24 lg:max-w-none lg:py-16">
               <h2 className="text-3xl text-left font-bold text-gray-900">
                 Projects
               </h2>
