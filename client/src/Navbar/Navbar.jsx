@@ -3,7 +3,7 @@ import { Disclosure} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from "../static/JL.gif";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 const navigation = [
@@ -58,7 +58,7 @@ export default function Navbar() {
                     <ul>
                       {navigation.map((item) => (
                         <li id={item.name}>
-                          <Link
+                          <NavLink
                             to={item.href}
                             id={item.name}
                             className={classNames(
@@ -72,7 +72,7 @@ export default function Navbar() {
                             }
                           >
                             {item.name}
-                          </Link>
+                          </NavLink>
                         </li>
                       ))}
                     </ul>
