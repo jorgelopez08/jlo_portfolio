@@ -3,7 +3,7 @@ import { Disclosure} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from "../static/JL.gif";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 const navigation = [
@@ -39,33 +39,34 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link to="/">
+                  <NavLink to="/">
                     <img
                       className="h-8 w-auto rounded-md"
                       src={logo}
                       alt="JLO Software logo"
                     />
-                  </Link>
+                  </NavLink>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        href={item.href}
-                        to={item.href}
-                        className={classNames(
-                          item.href === location
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={
-                          item.href === location ? "page" : undefined
-                        }
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                      {navigation.map((item) => (
+                        
+                          <NavLink
+                            to={item.href}
+                            id={item.name}
+                            className={classNames(
+                              item.href === location
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                              "rounded-md px-3 py-2 text-sm font-medium"
+                            )}
+                            aria-current={
+                              item.href === location ? "page" : undefined
+                            }
+                          >
+                            {item.name}
+                          </NavLink>
+                      ))}
                   </div>
                 </div>
               </div>
