@@ -2,6 +2,7 @@
   "name": "jlo_portfolio",
   "version": "0.1.0",
   "proxy": "http://localhost:3000",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.15",
